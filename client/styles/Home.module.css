@@ -2,13 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 
-.gradient_bg_welcome {
-  background-color:#0f0e13;
-  background-image: 
-    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
-    radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
-}
 
 .connect_btn_navbar {
   width: 100%;
@@ -38,28 +31,22 @@
   text-align: center;
 }
 
+.gradient_bg_welcome {
+  background-color:#0f0e13;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, rgb(79, 3, 129) 0, transparent 50%);
+}
+
 /* .gradient_bg_services {
   background-color:#0f0e13;
   background-image: 
     radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
     radial-gradient(at 50% 100%, hsla(225,39%,25%,1) 0, transparent 50%);
 } */
-/* 
-.gradient-bg-transactions {
-  background-color: #0f0e13;
-  background-image: 
-    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, hsla(225,39%,25%,1) 0, transparent 50%);
-}
 
-.gradient-bg-footer {
-  background-color: #0f0e13;
-  background-image: 
-    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 53%), 
-    radial-gradient(at 50% 150%, hsla(339,49%,30%,1) 0, transparent 50%);
-} */
-
-.blue-glassmorphism {
+#blue_glassmorphism {
   background: rgb(39, 51, 89, 0.4);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
@@ -69,7 +56,7 @@
 }
 
 /* white glassmorphism */
-.white-glassmorphism {
+.white_glassmorphism {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   backdrop-filter: blur(5px);
@@ -77,22 +64,66 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.eth-card {
-  background-color:#a099ff;
-  background-image: 
-    radial-gradient(at 83% 67%, rgb(152, 231, 156) 0, transparent 58%), 
-    radial-gradient(at 67% 20%, hsla(357,94%,71%,1) 0, transparent 59%), 
-    radial-gradient(at 88% 35%, hsla(222,81%,65%,1) 0, transparent 50%), 
-    radial-gradient(at 31% 91%, hsla(9,61%,61%,1) 0, transparent 52%), 
-    radial-gradient(at 27% 71%, hsla(336,91%,65%,1) 0, transparent 49%), 
-    radial-gradient(at 74% 89%, hsla(30,98%,65%,1) 0, transparent 51%), 
-    radial-gradient(at 53% 75%, hsla(174,94%,68%,1) 0, transparent 45%);
+.title {
+  font-family: 'Sanchez', serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  text-decoration: underline;
 }
 
-.text-gradient {
+#main_line {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
   background-color: #fff;
   background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
-  /* -webkit-background-clip: text; */
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#bigger_btn {
+  background-color: #f8ceec;
+  background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.connect_wallet_text {
+  display: flex;
+}
+
+#card_description {
+  position: relative;
+  background-color: rgba(21, 61, 111, 0.44);
+  border: 2px solid rgba(22, 72, 133, 0.44);
+  color: rgb(80, 144, 234);
+  max-width: 470px;
+  width: 80%;  
+  box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px, rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  font-weight: 700;
+}
+
+#card_description_second_part {
+  font-size: 10px;
+  color: rgb(154, 184, 228);;
+}
+
+#eth_card {
+  background-color: #5d4257;
+    background-image: linear-gradient(315deg, #5d4257 0%, #90b8a5 74%);
+    
+}
+
+@media only screen and (max-width: 600px) {
+  #apexlogo {
+    width: 50px;
+  }
+
+  #card_description {
+    width: 100%;
+  }
 }
