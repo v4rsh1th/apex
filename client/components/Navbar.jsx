@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="w-full flex md:justify-center justify-between items-center p-4">
       <div id={styles.apexlogo} className="md:flex-[0.5] flex-initial justify-center items-center">
-        <Image src={logo} alt="logo" className="w-32 cursor-pointer" width={"70px"} />
+        <Image src={logo} alt="logo" className="w-32 cursor-pointer" width={"70px"} quality={100} />
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
         <u>

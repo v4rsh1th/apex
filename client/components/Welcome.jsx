@@ -41,7 +41,7 @@ const Welcome = () => {
               </div>
               &nbsp; &nbsp;
               <div className="connect-wallet-column">
-                <Image src={wallet} alt="logo" width={"25px"} />
+                <Image src={wallet} alt="logo" width={"25px"} quality={100} />
               </div>
             </div>
           </button>
@@ -57,7 +57,7 @@ const Welcome = () => {
           <div id={styles.eth_card} className="p-3 justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5">
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
-                <Image src={ethlogo} alt="eth" width={"18px"} height={"30px"} />
+                <Image src={ethlogo} alt="eth" width={"18px"} height={"30px"} quality={100} />
               </div>
               <div>
                 <p className="text-white font-light text-sm text-left">
