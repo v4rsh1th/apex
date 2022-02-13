@@ -15,28 +15,22 @@ const Navbar = () => {
       <div id={styles.apexlogo} className="md:flex-[0.5] flex-initial justify-center items-center">
         <Image src={logo} alt="logo" className="w-32 cursor-pointer" width={"70px"} quality={100} />
       </div>
-      <ul id={styles.navbar_links} className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-        <u>
-          <li>
-            <Link href="/market">
-              <a>Market</a>
-            </Link>
-          </li>
-        </u>
-        <u>
-          <li>
-            <Link href="/NFT">
-              <a>NFT</a>
-            </Link>
-          </li>
-        </u>
-        <u>
-          <li>
-            <Link href="/creators">
-              <a>Creators</a>
-            </Link>
-          </li>
-        </u>
+      <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
+        <li id={styles.navbar_links}>
+          <Link href="/market">
+            <a>Market</a>
+          </Link>
+        </li>
+        <li id={styles.navbar_links}>
+          <Link href="/NFT">
+            <a>NFT</a>
+          </Link>
+        </li>
+        <li id={styles.navbar_links}>
+          <Link href="/creators">
+            <a>Creators</a>
+          </Link>
+        </li>
         <li className={styles.connect_btn_navbar}>
           Connect to Wallet
         </li>

@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 
+#navbar_links:hover {
+  text-decoration: underline;
+}
+
 #welcome_start {
   margin: 0 auto 10px;
   padding: 0 25px;
@@ -88,7 +92,7 @@
   background-color: #f8ceec;
   background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
   text-align: center;
-  border-radius: 8px;
+  border-radius: 14px;
 }
 
 .connect_wallet_text {
