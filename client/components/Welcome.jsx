@@ -57,11 +57,30 @@ const Welcome = () => {
           <div id={styles.eth_card} className="p-3 justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5">
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
-                <div className="w-10 h-10 flex justify-center items-center">
-                  <Image src={ethlogo} alt="eth" width={"18px"} />
-                </div>
+                <Image src={ethlogo} alt="eth" width={"18px"} height={"30px"} />
+              </div>
+              <div>
+                <p className="text-white font-light text-sm text-left">
+                  Address
+                </p>
               </div>
             </div>
+          </div>
+          <div className={styles.etherscan_block}>
+            <p><a href="https://etherscan.io/">Etherscan ↝</a></p>
+          </div>
+          <div id={styles.ugQLp} className="p-5 sm:w-96 w-full flex flex-col justify-start items-center text-white">
+            <div id={styles.swap_text}>Transfer</div>
+            <input id={styles.input_block_one} type={"text"} placeholder="0.0"></input>
+            <div id={styles.arrow}>
+              &darr;
+            </div>
+            <input id={styles.input_block_two} type={"text"} placeholder="0x address"></input><br />
+            {false ? (
+              <Loader />
+            ) : (
+              <button type="button" id={styles.ultimate_send_btn}>Send</button>
+            )}
           </div>
         </div>
       </div>

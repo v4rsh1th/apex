@@ -55,7 +55,6 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* white glassmorphism */
 .white_glassmorphism {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
@@ -116,6 +115,89 @@
   background-color: #5d4257;
     background-image: linear-gradient(315deg, #5d4257 0%, #90b8a5 74%);
     
+}
+
+.etherscan_block {
+  color: white;
+  font-family: 'Sanchez', serif;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.etherscan_block:hover {
+  cursor: pointer;
+  text-decoration: overline;
+}
+
+#ugQLp {
+  position: relative;
+  max-width: 470px;
+  width: 100%;
+  background: rgb(25, 27, 31);
+  box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px, rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
+  border-radius: 24px;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+#swap_text {
+  margin: 0px;
+  min-width: 0px;
+  font-weight: 600;
+  font-size: 16px;
+  align-self: flex-start;
+  padding-bottom: 20px;
+}
+
+#upper_block {
+  display: flex;
+}
+
+#input_block_one {
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 1rem 1rem 0.75rem;
+  background-color: #46434d;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: 1000;
+  font-size: 20px;
+}
+
+#arrow {
+  font-size: 20px;
+  font-weight: 900;
+  color: #c5c1d4;
+}
+
+#input_block_two {
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 1rem 1rem 0.75rem;
+  background-color: #46434d;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: 1000;
+}
+
+#ultimate_send_btn {
+  width: 100%;
+  background-color: #9eabe4;
+  background-image: linear-gradient(315deg, #9eabe4 0%, #77eed8 74%);
+  text-align: center;
+  font-weight: 900;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 @media only screen and (max-width: 600px) {

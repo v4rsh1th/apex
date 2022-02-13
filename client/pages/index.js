@@ -18,7 +18,6 @@ export default function Home() {
           <Navbar />
           <Welcome />
         </div>
-        <Footer />
       </div>
     </div>
   );
