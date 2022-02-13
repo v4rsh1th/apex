@@ -15,13 +15,13 @@ const Welcome = () => {
   }
 
   return (
-    <div className="flex w-full justify-center items-center">
-      <div className="flex md:flex-row items-start justify-between md:p-20 py-12 px-4">
+    <div className="flex w-full justify-center item-center">
+      <div className="flex md:flex-row flex-col items-start justify-between md:p-20 py-12 px4">
         <div className="flex flex-1 justify-start flex-col md:mr-10">
           <h1 className={styles.title}>
             ApexChain
           </h1>
-          <h1 id={styles.main_line} className="text-3xl sm:text-5xl text-white py-1">
+          <h1 id={styles.main_line} className="text-3xl sm:text-5xl text-white text-gradient py-1">
             Send digital assets across the galaxies
           </h1>
           <p id={styles.description} className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
@@ -34,7 +34,7 @@ const Welcome = () => {
             className="flex flex-row justify-center items-center my-5 p-4 cursor-pointer"
           >
             <div className={styles.connect_wallet_text}>
-              <div className="connect-wallet-column">
+              <div className="connect_wallet_column">
                 <p className="text-white text-base font-semibold">
                   Connect to Wallet
                 </p>
