@@ -67,7 +67,7 @@ const Welcome = () => {
             </div>
           </div>
           <div className={styles.etherscan_block}>
-            <p><a href="https://etherscan.io/">Etherscan ↝</a></p>
+            <p><a href="https://ropsten.etherscan.io/">Etherscan ↝</a></p>
           </div>
           <div id={styles.ugQLp} className="p-5 sm:w-96 w-full flex flex-col justify-start items-center text-white">
             <div id={styles.swap_text}>Transfer</div>
