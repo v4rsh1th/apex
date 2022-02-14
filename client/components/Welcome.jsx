@@ -41,7 +41,7 @@ const Welcome = () => {
               </div>
               &nbsp; &nbsp;
               <div className="connect-wallet-column">
-                <Image src={wallet} alt="logo" width={"25px"} quality={100} />
+                <Image src={wallet} alt="logo" width={"35px"} quality={100} />
               </div>
             </div>
           </button>
