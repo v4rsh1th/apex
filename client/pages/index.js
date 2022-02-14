@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
-import Welcome from '../components/Welcome';
+import Squeeze from '../components/Squeeze';
 import Footer from '../components/Footer';
 import styles from '../styles/Home.module.css';
 
@@ -16,7 +16,7 @@ export default function Home() {
       <div className="min-h-screen">
         <div className={styles.gradient_bg_welcome}>
           <Navbar />
-          <Welcome />
+          <Squeeze />
         </div>
       </div>
     </div>
