@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 
 #navbar_links:hover {
   text-decoration: underline;
@@ -85,6 +86,7 @@
   background-color: #fff;
   background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -97,6 +99,46 @@
 
 .connect_wallet_text {
   display: flex;
+}
+
+.offerings {
+  color: white;
+}
+
+#offerings_title {
+  font-size: 44px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 900;
+  background: linear-gradient(315deg, #314188 0%, #dd94ff 74%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#offerings_description {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #fff;
+  background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.offerings_pic_flex {
+  display: flex;
+}
+
+#offerings_pic_dollar {
+  margin-top: 30px;
+  color: white;
+  align-items: flex-start;
+}
+
+#offerings_pic_eth {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
 }
 
 #card_description {

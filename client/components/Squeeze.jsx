@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { AiFillPlayCircle } from 'react-icons/ai';
 import wallet from "../public/wallet.svg";
 import ethlogo from '../public/ethereum_eth_logo.svg';
+import eth from "../public/eth.svg";
 
 import styles from '../styles/Home.module.css';
 
@@ -25,7 +26,7 @@ const Squeeze = () => {
             Send digital assets across the galaxies
           </h1>
           <p id={styles.description} className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-            The easiest way to send, spend, and bank
+            The easiest way to send and spend
           </p>
           <button
             id={styles.bigger_btn}
@@ -45,6 +46,21 @@ const Squeeze = () => {
               </div>
             </div>
           </button>
+          <div className={styles.offerings}>
+            <div id={styles.offerings_title}>
+              Pay anyone, instantly
+            </div>
+            <div id={styles.offerings_pic_eth}>
+              <Image src={eth} alt="fast transactions" width={"150px"} height={"150px"} />
+            </div>
+          </div>
+          <div className={styles.offerings_pic_flex}>
+            <div id={styles.offerings_description}>
+              <p>
+                Send and receive digital assets anytime, anywhere. It&apos;s fast and free, a wallet and 0x address is all you need to get started.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-col flex-1 items-center justify-start w-full md:mt-0 mt-10">
