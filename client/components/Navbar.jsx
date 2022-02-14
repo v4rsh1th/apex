@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { CgMenuRightAlt } from "react-icons/cg";
 import { CgCloseO } from "react-icons/cg";
 
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
 import logo from '../public/logo.svg';
 
 const Navbar = () => {

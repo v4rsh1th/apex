@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import Navbar from '../components/Navbar'
-import Welcome from '../components/Welcome'
-import Footer from '../components/Footer'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Navbar from '../components/Navbar';
+import Welcome from '../components/Welcome';
+import Footer from '../components/Footer';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (

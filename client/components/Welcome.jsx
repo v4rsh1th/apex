@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { AiFillPlayCircle } from 'react-icons/ai';
 import wallet from "../public/wallet.svg";
-import ethlogo from '../public/ethereum_eth_logo.svg'
+import ethlogo from '../public/ethereum_eth_logo.svg';
 
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
 
 import { Loader } from './Loader';
 
