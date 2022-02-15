@@ -76,7 +76,7 @@ const Squeeze = () => {
                 <Image src={ethlogo} alt="eth" width={"18px"} height={"30px"} quality={100} />
               </div>
               <div>
-                <p className="text-white font-light text-sm text-left">
+                <p id={styles.eth_card_address} className="text-white font-light text-sm text-left">
                   Address
                 </p>
               </div>

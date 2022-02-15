@@ -17,8 +17,8 @@ const Navbar = () => {
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
         <li id={styles.navbar_links}>
-          <Link href="/market">
-            <a>Market</a>
+          <Link href="/docs">
+            <a>Docs</a>
           </Link>
         </li>
         <li id={styles.navbar_links}>
@@ -48,8 +48,8 @@ const Navbar = () => {
           >
             <li className="text-xl w-full my-4"><CgCloseO onClick={() => setToggleMenu(false)} /></li>
             <li>
-              <Link href="/market">
-                <a>Market</a>
+              <Link href="/docs">
+                <a>Docs</a>
               </Link>
             </li>
             <li>
