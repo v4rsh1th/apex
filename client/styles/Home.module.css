@@ -30,6 +30,11 @@
   text-align: center;
 }
 
+.connect_btn_navbar:hover,
+.connect_btn_navbar_sm:hover {
+  opacity: 0.9;
+}
+
 .connect_btn_navbar_sm {
   width: 80%;
   background-color: #f8ceec;

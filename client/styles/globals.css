@@ -16,6 +16,10 @@ body {
     radial-gradient(at 100% 0%, rgb(79, 3, 129) 0, transparent 50%); */
 }
 
+button:hover {
+  opacity: 0.9;
+}
+
 a {
   color: inherit;
 }
