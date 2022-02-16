@@ -9,7 +9,10 @@ export default function Docs() {
         <meta name="description" content="ApexChain" />
         <link rel="icon" href="/logo.svg" />
       </Head>
-      <p>Hey</p>
+      <p style={{ color: "white", textAlign: "center" }} >
+        Page under development. <br />
+        Love, Varshith :)
+      </p>
     </div>
   );
 }
