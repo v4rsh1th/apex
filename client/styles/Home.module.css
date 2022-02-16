@@ -10,6 +10,7 @@ License: MIT
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 
 #navbar_links {
   font-family: 'Sanchez', serif;
@@ -299,8 +300,67 @@ License: MIT
   font-size: 18px;
 }
 
+#back_button {
+  padding-left: 70px;
+  padding-top: 30px;
+}
+
 .creators_page {
   color: white;
+  background-color: black;
+  background-image: 
+    radial-gradient(at 0% 0%, rgb(36, 23, 104) 0, transparent 50%), 
+    radial-gradient(at 0% 40%, rgb(85, 5, 105) 0, transparent 50%);
+}
+
+#creators_title {
+  font-family: 'Nanum Myeongjo', serif;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 80px;
+}
+
+#punks_container {
+  display: flex;
+  max-width: 80%;
+  margin: 30px auto;
+  justify-content: center;
+  gap: 50px;
+}
+
+
+.punks {
+  color: white;
+  width: 100%;
+  max-width: 25em;
+  justify-content: space-between;
+}
+
+.punks_name {
+  background: linear-gradient(315deg, #314188 0%, #dd94ff 74%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Sanchez', serif;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.punks_description {
+  font-family: 'Sanchez', serif;
+  font-size: 18px;
+}
+
+#punkpic {
+  border-radius: 50%;
+  width: 10px;
+  text-align: center;
+}
+
+#creators_brag {
+  padding: 60px;
+  font-size: 40px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -314,5 +374,19 @@ License: MIT
 
   .features_container {
     display: block;
+  }
+
+  #back_button {
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  #creators_title {
+    font-size: 25px;
+  }
+
+  #creators_brag {
+    padding: 60px;
+    font-size: 20px;
   }
 }
