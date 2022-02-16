@@ -85,6 +85,10 @@ const Squeeze = () => {
           <div className={styles.etherscan_block}>
             <p><a href="https://ropsten.etherscan.io/">Etherscan ↝</a></p>
           </div>
+          <br />
+          <div id={styles.card_description} style={{ fontSize: "11.5px" }}>
+            Using Etherscan can help you understand exactly how you interact with the blockchain, other wallets, and DApps. This knowledge can also help you stay safe and spot suspicious behavior.
+          </div>
           <div id={styles.ugQLp} className="p-5 sm:w-96 w-full flex flex-col justify-start items-center text-white">
             <div id={styles.swap_text}>Transfer</div>
             <input id={styles.input_block_one} type={"text"} placeholder="0.0"></input>
@@ -100,7 +104,7 @@ const Squeeze = () => {
           </div>
         </div>
       </div>
-    </div >
+    </div>
   )
 }
 export default Squeeze;
