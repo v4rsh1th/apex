@@ -10,7 +10,6 @@ License: MIT
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 
 #navbar_links {
   font-family: 'Sanchez', serif;
@@ -314,10 +313,11 @@ License: MIT
 }
 
 #creators_title {
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Sanchez', serif;
   text-align: center;
   padding-top: 50px;
   font-size: 80px;
+  text-decoration: overline;
 }
 
 #punks_container {
@@ -383,6 +383,10 @@ License: MIT
 
   #creators_title {
     font-size: 25px;
+  }
+
+  .punks_name {
+    font-size: 18px;
   }
 
   #creators_brag {
