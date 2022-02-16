@@ -307,9 +307,9 @@ License: MIT
 .creators_page {
   color: white;
   background-color: black;
-  background-image: 
-    radial-gradient(at 0% 0%, rgb(36, 23, 104) 0, transparent 50%), 
-    radial-gradient(at 0% 40%, rgb(85, 5, 105) 0, transparent 50%);
+  background-image:
+    radial-gradient(at -30% 57%, rgb(36, 23, 104) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, rgb(85, 5, 105) 0, transparent 50%);
 }
 
 #creators_title {
@@ -327,7 +327,6 @@ License: MIT
   justify-content: center;
   gap: 50px;
 }
-
 
 .punks {
   color: white;
@@ -355,7 +354,6 @@ License: MIT
 #punkpic {
   border-radius: 50%;
   width: 10px;
-  text-align: center;
 }
 
 #creators_brag {

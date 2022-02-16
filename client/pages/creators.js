@@ -26,7 +26,7 @@ export default function Creators() {
           <div className={styles.punks_left}>
             <div className={styles.punks}>
               <div className={styles.punks_name}>
-                Varshith
+                Varshith [v4rsh1th]
               </div>
               <div className={styles.punks_description}>
                 <Image id={styles.punkpic} src={varshith} width={"120px"} height={"120px"} alt="punks" />
@@ -37,7 +37,7 @@ export default function Creators() {
           <div className={styles.punks_left}>
             <div className={styles.punks}>
               <div className={styles.punks_name}>
-                Pranitha
+                Pranitha [pr4n1th4]
               </div>
               <div className={styles.punks_description}>
                 <Image id={styles.punkpic} src={prani} width={"120px"} height={"120px"} alt="punks" />
@@ -50,7 +50,7 @@ export default function Creators() {
           <div className={styles.punks_left}>
             <div className={styles.punks}>
               <div className={styles.punks_name}>
-                Rachana
+                Rachana [r4ch4n4]
               </div>
               <div className={styles.punks_description}>
                 <Image id={styles.punkpic} src={rachana} width={"120px"} height={"120px"} alt="punks" />
@@ -61,7 +61,7 @@ export default function Creators() {
           <div className={styles.punks_left}>
             <div className={styles.punks}>
               <div className={styles.punks_name}>
-                Sridhar
+                Sridhar [sr1dh4r]
               </div>
               <div className={styles.punks_description}>
                 <Image id={styles.punkpic} src={sridhar} width={"120px"} height={"120px"} alt="punks" />
