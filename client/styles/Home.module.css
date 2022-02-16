@@ -124,8 +124,7 @@ License: MIT
 
 #offerings_title {
   font-size: 44px;
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 900;
+  font-family: 'Sanchez', serif;
   background: linear-gradient(315deg, #314188 0%, #dd94ff 74%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -287,18 +286,16 @@ License: MIT
 }
 
 .qualitites_header {
-  color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background: linear-gradient(315deg, #9eabe4 0%, #77eed8 74%);
+  background: linear-gradient(315deg, #314188 0%, #dd94ff 74%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: 'Sanchez', serif;
   font-size: 35px;
-  font-weight: 900;
 }
 
 .qualities_description {
-  font-family: "Sanchez";
+  font-family: 'Sanchez', serif;
   font-size: 18px;
 }
 
