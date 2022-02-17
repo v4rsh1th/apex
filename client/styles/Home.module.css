@@ -326,6 +326,7 @@ License: MIT
   margin: 30px auto;
   justify-content: center;
   gap: 50px;
+  text-align: center;
 }
 
 .punks {
@@ -342,7 +343,6 @@ License: MIT
   -webkit-text-fill-color: transparent;
   font-family: 'Sanchez', serif;
   font-size: 25px;
-  text-align: center;
   margin-bottom: 30px;
 }
 
