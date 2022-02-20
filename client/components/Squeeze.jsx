@@ -59,7 +59,7 @@ const Squeeze = () => {
             <div className={styles.after_connected_address_big}>
               <div className={styles.address_pic}>
                 <div className={styles.address_picture}>
-                  <Image src={account} width={"80px"} height={"80px"} />
+                  <Image src={account} width={"80px"} height={"80px"} alt="Account avatar" />
                 </div>
                 <div className={styles.address_picture}>
                   {shortenAddress(currentAccount)}
@@ -100,6 +100,11 @@ const Squeeze = () => {
                 <p id={styles.eth_card_address} className="text-white font-light text-sm text-left">
                   {shortenAddress(currentAccount)}
                 </p>
+                <div id={styles.eth_card_address_desc}>
+                  <p>
+                    Wallet 0x address
+                  </p>
+                </div>
               </div>
             </div>
           </div>

@@ -46,7 +46,7 @@ const Navbar = () => {
             <div className={styles.after_connected_address_small}>
               <div className={styles.address_pic_navbar}>
                 <div className={styles.address_picture_navbar}>
-                  <Image src={account} width={"30px"} height={"30px"} />
+                  <Image src={account} width={"30px"} height={"30px"} alt="Account avatar" />
                 </div>
                 <div className={styles.address_picture_navbar}>
                   {shortenAddress(currentAccount)}
@@ -83,8 +83,26 @@ const Navbar = () => {
                 <a>Creators</a>
               </Link>
             </li>
-            <li className={styles.connect_btn_navbar_sm}>
-              Connect to Wallet
+            <li>
+              {!currentAccount ? (
+                <button
+                  className={styles.connect_btn_navbar}
+                  type="button"
+                  onClick={connectWallet}
+                >
+                  Connect to Wallet
+                </button>) :
+                <div className={styles.after_connected_address_small}>
+                  <div className={styles.address_pic_navbar}>
+                    <div className={styles.address_picture_navbar}>
+                      <Image src={account} width={"30px"} height={"30px"} alt="Account avatar" />
+                    </div>
+                    <div className={styles.address_picture_navbar}>
+                      {shortenAddress(currentAccount)}
+                    </div>
+                  </div>
+                </div>
+              }
             </li>
           </ul>
         )}

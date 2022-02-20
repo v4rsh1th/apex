@@ -89,7 +89,15 @@ License: MIT
   /* background-color:#0f0e13; */
   background-image: 
     radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
-    radial-gradient(at 0% 100%, rgb(85, 5, 105) 0, transparent 50%);
+    radial-gradient(at 0% 40%, rgb(85, 5, 105) 0, transparent 50%);
+}
+
+.footer_content {
+  background-color: white;
+  /* background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 0% 40%, rgb(85, 5, 105) 0, transparent 50%); */
+
 }
 
 #blue_glassmorphism {
@@ -232,11 +240,17 @@ License: MIT
 #eth_card {
   background-color: #5d4257;
   background-image: linear-gradient(315deg, #5d4257 0%, #90b8a5 74%);
-    
 }
 
 #eth_card_address {
   font-family: 'Sanchez', serif;
+  font-size: 16px;
+}
+
+#eth_card_address_desc {
+  color: rgb(53, 49, 49);
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .etherscan_block {

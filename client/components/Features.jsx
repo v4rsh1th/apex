@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.css';
 
 const Features = () => {
+
   return (
     <div className={styles.features_content}>
       <div className={styles.features_container}>
@@ -45,6 +46,10 @@ const Features = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className={styles.footer_container}>
+        afll
       </div>
     </div>
   );
