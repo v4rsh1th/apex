@@ -118,6 +118,38 @@ License: MIT
   display: flex;
 }
 
+.address_pic {
+  display: flex;
+  padding: 30px;
+  padding-left: 0;
+  gap: 50px;
+  font-family: 'Sanchez', serif;
+}
+
+.address_pic img {
+  border-radius: 50%;
+}
+
+.address_picture {
+  color: white;
+  align-self: center;
+}
+
+.address_pic_navbar {
+  font-family: 'Sanchez', serif;
+  display: flex;
+  gap: 20px;
+}
+
+.address_pic_navbar img {
+  border-radius: 50%;
+}
+
+.address_picture_navbar {
+  color: white;
+  align-self: center;
+}
+
 .offerings {
   color: white;
 }
@@ -363,16 +395,6 @@ License: MIT
   font-size: 40px;
 }
 
-#docs_container {
-  max-width: 70%;
-  margin: 40px auto;
-}
-
-#disclaimer {
-  text-align: center;
-  font-size: 26px;
-  text-decoration: underline;
-}
 
 @media only screen and (max-width: 600px) {
   #apexlogo {
@@ -392,8 +414,7 @@ License: MIT
     padding-top: 30px;
   }
 
-  #creators_title,
-  #docs_title {
+  #creators_title {
     font-size: 25px;
   }
 
@@ -404,11 +425,5 @@ License: MIT
   #creators_brag {
     padding: 60px;
     font-size: 20px;
-  }
-
-  #disclaimer {
-    text-align: left;
-    font-size: 18px;
-    text-decoration: none;
   }
 }

@@ -1,18 +1,27 @@
+import React, { useContext } from 'react';
 import Image from 'next/image';
 import { AiFillPlayCircle } from 'react-icons/ai';
 import wallet from "../public/wallet.svg";
 import ethlogo from '../public/ethereum_eth_logo.svg';
 import eth from "../public/eth.svg";
+import account from "../public/account.png";
 
 import styles from '../styles/Home.module.css';
 
+import { TransactionContext } from '../context/TransactionContext';
 import { Loader } from './Loader';
 
 const commonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
 const Squeeze = () => {
-  const connectWallet = () => {
+  const { connectWallet, currentAccount, formData, sendTransaction, handle_change } = useContext(TransactionContext);
 
+  const handleSubmit = (e) => {
+    const { addressTo, amount } = formData;
+    e.preventDefault();
+
+    if (!addressTo || !amount) return;
+    sendTransaction();
   }
 
   return (
@@ -28,24 +37,35 @@ const Squeeze = () => {
           <p id={styles.description} className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
             The easiest way to send and spend
           </p>
-          <button
-            id={styles.bigger_btn}
-            type="button"
-            onClick={connectWallet}
-            className="flex flex-row justify-center items-center my-5 p-4 cursor-pointer"
-          >
-            <div className={styles.connect_wallet_text}>
-              <div className="connect_wallet_column">
-                <p className="text-white text-base font-semibold">
-                  Connect to Wallet
-                </p>
+          {!currentAccount ? (
+            <button
+              id={styles.bigger_btn}
+              type="button"
+              onClick={connectWallet}
+              className="flex flex-row justify-center items-center my-5 p-4 cursor-pointer"
+            >
+              <div className={styles.connect_wallet_text}>
+                <div className="connect_wallet_column">
+                  <p className="text-white text-base font-semibold">
+                    Connect to Wallet
+                  </p>
+                </div>
+                &nbsp; &nbsp;
+                <div className="connect-wallet-column">
+                  <Image src={wallet} alt="logo" width={"35px"} quality={100} />
+                </div>
               </div>
-              &nbsp; &nbsp;
-              <div className="connect-wallet-column">
-                <Image src={wallet} alt="logo" width={"35px"} quality={100} />
+            </button>
+          ) :
+            <div className={styles.address_pic}>
+              <div className={styles.address_picture}>
+                <Image src={account} width={"80px"} height={"80px"} />
+              </div>
+              <div className={styles.address_picture}>
+                Address
               </div>
             </div>
-          </button>
+          }
           <div className={styles.offerings}>
             <div id={styles.offerings_title}>
               Pay anyone, instantly
@@ -91,20 +111,27 @@ const Squeeze = () => {
           </div>
           <div id={styles.ugQLp} className="p-5 sm:w-96 w-full flex flex-col justify-start items-center text-white">
             <div id={styles.swap_text}>Transfer</div>
-            <input id={styles.input_block_one} type={"text"} placeholder="0.0"></input>
+            <input id={styles.input_block_two} name="addressTo" type="text" placeholder="0x address" onChange={e => handle_change(e, 'addressTo')} />
             <div id={styles.arrow}>
               &darr;
             </div>
-            <input id={styles.input_block_two} type={"text"} placeholder="0x address"></input><br />
+            <input id={styles.input_block_one} name="amount" type="number" placeholder="0.0" onChange={e => handle_change(e, 'amount')} />
+            <br />
             {false ? (
               <Loader />
             ) : (
-              <button type="button" id={styles.ultimate_send_btn}>Send</button>
+              <button
+                type="button"
+                id={styles.ultimate_send_btn}
+                onClick={handleSubmit}
+              >
+                Send
+              </button>
             )}
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 export default Squeeze;

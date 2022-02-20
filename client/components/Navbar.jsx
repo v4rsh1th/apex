@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { CgMenuRightAlt } from "react-icons/cg";
 import { CgCloseO } from "react-icons/cg";
-
+import { TransactionContext } from '../context/TransactionContext';
 import styles from '../styles/Home.module.css';
 import logo from '../public/logo.svg';
+import account from "../public/account.png";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
+  const { connectWallet, currentAccount } = useContext(TransactionContext);
 
   return (
     <nav className="w-full flex md:justify-center justify-between items-center p-4">
@@ -31,8 +33,30 @@ const Navbar = () => {
             <a>Creators</a>
           </Link>
         </li>
-        <li className={styles.connect_btn_navbar}>
-          Connect to Wallet
+        <li>
+          {!currentAccount ? (
+            <button
+              className={styles.connect_btn_navbar}
+              type="button"
+              onClick={connectWallet}
+            >
+              Connect to Wallet
+            </button>) :
+            // <button
+            //   className={styles.connect_btn_navbar}
+            //   type="button"
+            // >
+            //   CONNECTED!
+            // </button>
+            <div className={styles.address_pic_navbar}>
+              <div className={styles.address_picture_navbar}>
+                <Image src={account} width={"30px"} height={"30px"} />
+              </div>
+              <div className={styles.address_picture_navbar}>
+                Address
+              </div>
+            </div>
+          }
         </li>
       </ul>
       <div className="flex relative">
@@ -68,7 +92,7 @@ const Navbar = () => {
           </ul>
         )}
       </div>
-    </nav>
+    </nav >
   );
 }
 

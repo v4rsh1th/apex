@@ -18,12 +18,7 @@ export default function Docs() {
           ApexChain // Docs
         </div>
         <div id={styles.docs_container}>
-          <div id={styles.disclaimer}>
-            Make sure you have a wallet installed before getting started.
-          </div> <br />
-          <div id={styles.docs_part_header}>
-            1. What
-          </div>
+
         </div>
       </div>
     </div>
