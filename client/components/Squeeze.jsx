@@ -10,6 +10,7 @@ import styles from '../styles/Home.module.css';
 
 import { TransactionContext } from '../context/TransactionContext';
 import { Loader } from './Loader';
+import { shortenAddress } from '../utils/shortenAddress';
 
 const commonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
@@ -62,7 +63,8 @@ const Squeeze = () => {
                 <Image src={account} width={"80px"} height={"80px"} />
               </div>
               <div className={styles.address_picture}>
-                Address
+                {/* {currentAccount} */}
+                {shortenAddress(currentAccount)}
               </div>
             </div>
           }
@@ -97,7 +99,7 @@ const Squeeze = () => {
               </div>
               <div>
                 <p id={styles.eth_card_address} className="text-white font-light text-sm text-left">
-                  Address
+                  {shortenAddress(currentAccount)}
                 </p>
               </div>
             </div>

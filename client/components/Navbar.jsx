@@ -53,7 +53,7 @@ const Navbar = () => {
                 <Image src={account} width={"30px"} height={"30px"} />
               </div>
               <div className={styles.address_picture_navbar}>
-                Address
+                {currentAccount}
               </div>
             </div>
           }
