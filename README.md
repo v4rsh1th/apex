@@ -7,7 +7,7 @@ A decentralized system with an emphasis on security, transparency, reliability, 
 Navigate to ```/client``` & ```/system``` and pull up ```npm install``` or ```yarn install```
 
 ### Run local server:
-```npm run dev```
+Move into ```/client``` and run ```npm run dev```
 
 Push to master branch to deploy
 
