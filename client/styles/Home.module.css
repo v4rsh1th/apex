@@ -15,6 +15,25 @@ License: MIT
   font-family: 'Sanchez', serif;
 }
 
+.after_connected_address_small {
+  background-color: rgba(21, 61, 111, 0.44);
+  border: 2px solid rgba(22, 72, 133, 0.44);
+  color: rgb(80, 144, 234);
+  box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px, rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.after_connected_address_big {
+  background-color: rgba(21, 61, 111, 0.44);
+  border: 2px solid rgba(255, 251, 251, 0.44);
+  color: rgb(80, 144, 234);
+  box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px, rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 40px;
+}
+
 #navbar_links:hover {
   text-decoration: underline;
 }
@@ -120,8 +139,8 @@ License: MIT
 
 .address_pic {
   display: flex;
-  padding: 30px;
-  padding-left: 0;
+  /* padding: 30px; */
+  /* padding-left: 0; */
   gap: 50px;
   font-family: 'Sanchez', serif;
 }

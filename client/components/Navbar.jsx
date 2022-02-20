@@ -7,6 +7,7 @@ import { TransactionContext } from '../context/TransactionContext';
 import styles from '../styles/Home.module.css';
 import logo from '../public/logo.svg';
 import account from "../public/account.png";
+import { shortenAddress } from '../utils/shortenAddress';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
@@ -42,18 +43,14 @@ const Navbar = () => {
             >
               Connect to Wallet
             </button>) :
-            // <button
-            //   className={styles.connect_btn_navbar}
-            //   type="button"
-            // >
-            //   CONNECTED!
-            // </button>
-            <div className={styles.address_pic_navbar}>
-              <div className={styles.address_picture_navbar}>
-                <Image src={account} width={"30px"} height={"30px"} />
-              </div>
-              <div className={styles.address_picture_navbar}>
-                {currentAccount}
+            <div className={styles.after_connected_address_small}>
+              <div className={styles.address_pic_navbar}>
+                <div className={styles.address_picture_navbar}>
+                  <Image src={account} width={"30px"} height={"30px"} />
+                </div>
+                <div className={styles.address_picture_navbar}>
+                  {shortenAddress(currentAccount)}
+                </div>
               </div>
             </div>
           }

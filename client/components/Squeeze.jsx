@@ -12,8 +12,6 @@ import { TransactionContext } from '../context/TransactionContext';
 import { Loader } from './Loader';
 import { shortenAddress } from '../utils/shortenAddress';
 
-const commonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
-
 const Squeeze = () => {
   const { connectWallet, currentAccount, formData, sendTransaction, handle_change } = useContext(TransactionContext);
 
@@ -58,13 +56,14 @@ const Squeeze = () => {
               </div>
             </button>
           ) :
-            <div className={styles.address_pic}>
-              <div className={styles.address_picture}>
-                <Image src={account} width={"80px"} height={"80px"} />
-              </div>
-              <div className={styles.address_picture}>
-                {/* {currentAccount} */}
-                {shortenAddress(currentAccount)}
+            <div className={styles.after_connected_address_big}>
+              <div className={styles.address_pic}>
+                <div className={styles.address_picture}>
+                  <Image src={account} width={"80px"} height={"80px"} />
+                </div>
+                <div className={styles.address_picture}>
+                  {shortenAddress(currentAccount)}
+                </div>
               </div>
             </div>
           }
