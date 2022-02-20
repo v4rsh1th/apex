@@ -3,7 +3,6 @@ import styles from '../styles/Home.module.css';
 const Features = () => {
   return (
     <div className={styles.features_content}>
-
       <div className={styles.features_container}>
         <div className={styles.features_left}>
           <div className={styles.qualities}>
@@ -46,10 +45,6 @@ const Features = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div>
-        gjbjabj
       </div>
     </div>
   );
