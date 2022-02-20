@@ -414,7 +414,8 @@ License: MIT
     padding-top: 30px;
   }
 
-  #creators_title {
+  #creators_title,
+  #docs_title {
     font-size: 25px;
   }
 
