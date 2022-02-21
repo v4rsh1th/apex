@@ -106,7 +106,7 @@ const Squeeze = () => {
             </div>
           </div>
           <div className={styles.etherscan_block}>
-            <p><a href="https://ropsten.etherscan.io/">Etherscan ↝</a></p>
+            <p><a href="https://ropsten.etherscan.io/" target={"_blank"} rel="noopener noreferrer" >Etherscan ↝</a></p>
           </div>
           <br />
           <div id={styles.card_description} style={{ fontSize: "11.5px" }}>
