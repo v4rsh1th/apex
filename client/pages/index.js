@@ -12,7 +12,7 @@ export default function Home() {
         <meta name="description" content="ApexChain" />
         <link rel="icon" href="/logo.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       </Head>
       <div className="min-h-screen">
         <div className={styles.gradient_bg_welcome}>

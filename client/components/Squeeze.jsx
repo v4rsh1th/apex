@@ -1,13 +1,11 @@
 import React, { useContext } from 'react';
 import Image from 'next/image';
-import { AiFillPlayCircle } from 'react-icons/ai';
+// import { AiFillPlayCircle } from 'react-icons/ai';
 import wallet from "../public/wallet.svg";
 import ethlogo from '../public/ethereum_eth_logo.svg';
 import eth from "../public/eth.svg";
 import account from "../public/account.png";
-
 import styles from '../styles/Home.module.css';
-
 import { TransactionContext } from '../context/TransactionContext';
 import { Loader } from './Loader';
 import { shortenAddress } from '../utils/shortenAddress';

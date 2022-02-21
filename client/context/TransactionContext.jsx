@@ -21,6 +21,7 @@ export const TransactionProvider = ({ children }) => {
     addressTo: "",
     amount: ""
   });
+
   const [isLoading, setIsLoading] = useState(false);
 
   const handle_change = (e, name) => {
