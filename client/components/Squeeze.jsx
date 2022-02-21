@@ -18,7 +18,6 @@ const Squeeze = () => {
   const handleSubmit = (e) => {
     const { addressTo, amount } = formData;
     e.preventDefault();
-
     if (!addressTo || !amount) return;
     sendTransaction();
   }

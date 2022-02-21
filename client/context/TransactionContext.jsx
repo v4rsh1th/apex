@@ -1,17 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
-
 import { contractABI, contractAddress } from "../utils/constants";
 
 export const TransactionContext = React.createContext();
-
-// const { ethereum } = window;
-// window.ethereum;
-
-// if (typeof window !== "undefined") {
-// }
-
-// let eth;
 
 if (typeof window !== "undefined") {
   window.ethereum
@@ -21,7 +12,6 @@ const getEthereumContract = () => {
   const provider = new ethers.providers.Web3Provider(ethereum);
   const signer = provider.getSigner();
   const transactionContract = new ethers.Contract(contractAddress, contractABI, signer);
-
   return transactionContract;
 }
 
@@ -32,8 +22,6 @@ export const TransactionProvider = ({ children }) => {
     amount: ""
   });
   const [isLoading, setIsLoading] = useState(false);
-  // const [transactionCount, setTransactionCount] = useState(localStorage.getItem("transactionCount"));
-  // setTransactionCount(transactionCount.toNumber());
 
   const handle_change = (e, name) => {
     setFormData(prevState => ({ ...prevState, [name]: e.target.value }));
@@ -45,7 +33,6 @@ export const TransactionProvider = ({ children }) => {
       const accounts = await ethereum.request({ method: "eth_accounts" });
       if (accounts.length) {
         setCurrentAccount(accounts[0]);
-        // getAllTransactions();
       } else {
         console.log("No accounts found.");
       }
@@ -91,9 +78,6 @@ export const TransactionProvider = ({ children }) => {
       await transactionHash.wait();
       setIsLoading(false);
       console.log(`Success - ${transactionHash.hash}`);
-
-      // const transactionCount = await transactionContract.getTransactionCount();
-
     } catch (error) {
       console.error(error);
       throw new Error("No ethereum object.");

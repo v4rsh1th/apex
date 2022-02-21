@@ -13,9 +13,7 @@ export default function Home() {
         <link rel="icon" href="/logo.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"></link>
       </Head>
-
       <div className="min-h-screen">
         <div className={styles.gradient_bg_welcome}>
           <Navbar />

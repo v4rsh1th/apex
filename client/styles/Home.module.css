@@ -253,6 +253,15 @@ License: MIT
   font-weight: 700;
 }
 
+#copy_button {
+  font-size: 15px;
+}
+
+#copy_button:hover {
+  cursor: pointer;
+  color: #314188;
+}
+
 .etherscan_block {
   color: white;
   font-family: 'Sanchez', serif;
