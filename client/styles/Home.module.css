@@ -477,4 +477,8 @@ License: MIT
     padding: 60px;
     font-size: 20px;
   }
+
+  #opensource_description {
+    text-align: left;
+  }
 }
