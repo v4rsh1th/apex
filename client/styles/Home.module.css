@@ -10,6 +10,7 @@ License: MIT
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
 
 #navbar_links {
   font-family: 'Sanchez', serif;
@@ -446,6 +447,43 @@ License: MIT
   text-align: center;
 }
 
+.footer {
+  display: flex;
+}
+
+.footer_container_left {
+  color: white;
+  background-color: #0f0e13;
+  padding: 50px;
+}
+
+#footer_logo_name {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+#footer_brag {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 40px;
+  width: 60%;
+}
+
+.footer_container_right {
+  color: white;
+  background-color: #0f0e13;
+  padding: 50px;
+  width: 40%;
+}
+
+.license_container {
+  max-width: 50%;
+  margin: 30px auto;
+  text-align: justify;
+  gap: 50px;
+  font-family: "Sanchez";
+}
+
 @media only screen and (max-width: 600px) {
   #apexlogo {
     width: 50px;
@@ -481,4 +519,32 @@ License: MIT
   #opensource_description {
     text-align: left;
   }
+
+  .footer {
+    display: block;
+  }
+
+  .footer_container_left {
+    padding: 20px;
+    width: 100%;
+  }
+  
+  #footer_brag {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .footer_container_right {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .license_container {
+    max-width: 80%;
+    margin: 30px auto;
+    text-align: justify;
+    font-family: "Sanchez";
+  }
+  
 }
