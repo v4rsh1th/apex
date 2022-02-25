@@ -9,6 +9,8 @@ Navigate to ```/client``` & ```/system``` and pull up ```npm install``` or ```ya
 ### Run local server:
 Move into ```/client``` and run ```npm run dev```
 
+On a side note... UI is build with Next.js, darn fast.
+
 Push to master branch to deploy
 
 <hr>

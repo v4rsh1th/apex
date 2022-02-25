@@ -440,11 +440,30 @@ License: MIT
 }
 
 .docs_container {
-  max-width: 80%;
+  max-width: 60%;
   margin: 30px auto;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 50px;
+}
+
+.github {
   text-align: center;
+}
+
+#docs_content {
+  margin-top: 70px;
+}
+
+#docs_content_heading {
+  font-size: 35px;
+  font-family: 'Noto Serif Display', serif;
+  text-decoration: underline;
+}
+
+#docs_explanation {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: 'Sanchez', serif;
 }
 
 .footer {
@@ -481,7 +500,7 @@ License: MIT
   margin: 30px auto;
   text-align: justify;
   gap: 50px;
-  font-family: "Sanchez";
+  font-family: 'Sanchez', serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -540,11 +559,11 @@ License: MIT
     width: 100%;
   }
 
-  .license_container {
+  .license_container,
+  .docs_container {
     max-width: 80%;
     margin: 30px auto;
-    text-align: justify;
-    font-family: "Sanchez";
-  }
-  
+    /* text-align: justify; */
+    font-family: 'Sanchez', serif;
+  } 
 }
