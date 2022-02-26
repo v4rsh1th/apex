@@ -144,7 +144,6 @@ License: MIT
 }
 
 .address_pic {
-  display: flex;
   gap: 50px;
   font-family: 'Sanchez', serif;
 }
