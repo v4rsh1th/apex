@@ -95,10 +95,6 @@ License: MIT
 
 .footer_content {
   background-color: white;
-  /* background-image: 
-    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
-    radial-gradient(at 0% 40%, rgb(85, 5, 105) 0, transparent 50%); */
-
 }
 
 #blue_glassmorphism {
@@ -149,8 +145,6 @@ License: MIT
 
 .address_pic {
   display: flex;
-  /* padding: 30px; */
-  /* padding-left: 0; */
   gap: 50px;
   font-family: 'Sanchez', serif;
 }
@@ -442,7 +436,6 @@ License: MIT
 .docs_container {
   max-width: 60%;
   margin: 30px auto;
-  /* justify-content: center; */
   gap: 50px;
 }
 
@@ -563,7 +556,6 @@ License: MIT
   .docs_container {
     max-width: 80%;
     margin: 30px auto;
-    /* text-align: justify; */
     font-family: 'Sanchez', serif;
   } 
 }

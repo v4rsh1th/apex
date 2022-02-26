@@ -8,7 +8,6 @@ export default function Docs() {
       <Head>
         <title>ApexChain &mdash; Docs</title>
         <meta name="description" content="ApexChain" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"></link>
         <link rel="icon" href="/logo.svg" />
       </Head>
       <div className={styles.docs_content}>
