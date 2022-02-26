@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import metamask_setup from '../public/pix/metamask.png';
+import connect_wallet from '../public/pix/connect.png';
 
 export default function Docs() {
   return (
@@ -41,6 +44,10 @@ export default function Docs() {
               <br />
               c. And at this point, you are all set for using any dApp.
             </p>
+            <br />
+            <div className={styles.docs_pics}>
+              <Image src={metamask_setup} alt="Metamask setup" layout="responsive" />
+            </div>
             <br /><br />
             <h1 id={styles.docs_content_heading}>
               SIGN-IN WITH METAMASK TO APEXCHAIN
@@ -52,6 +59,10 @@ export default function Docs() {
               <br />
               c. Choose your account and click Next.
             </p>
+            <br />
+            <div className={styles.docs_pics}>
+              <Image src={connect_wallet} alt="Connect to your wallet" layout="responsive" />
+            </div>
           </div>
         </div>
       </div>

@@ -459,6 +459,10 @@ License: MIT
   font-family: 'Sanchez', serif;
 }
 
+.docs_pics img {
+  border-radius: 5px;
+}
+
 .footer {
   display: flex;
 }
