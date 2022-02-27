@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export default function Nft() {
@@ -9,7 +10,10 @@ export default function Nft() {
         <meta name="description" content="ApexChain" />
         <link rel="icon" href="/logo.svg" />
       </Head>
-      <p style={{ color: "white", textAlign: "center" }} >
+      <div id={styles.back_button}>
+        <Link href="/">← back</Link>
+      </div>
+      <p id={styles.nft_construct}>
         Page under development. <br />
         Love, Varshith :)
       </p>

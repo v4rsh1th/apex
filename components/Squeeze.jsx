@@ -82,12 +82,12 @@ const Squeeze = () => {
         </div>
 
         <div className="flex flex-col flex-1 items-center justify-start w-full md:mt-0 mt-10">
-          <div id={styles.card_description} className="sm:w-96 w-full flex flex-col justify-start items-center text-white">
+          {/* <div id={styles.card_description} className="sm:w-96 w-full flex flex-col justify-start items-center text-white">
             <p>Personalized Ethereum card</p>
             <p id={styles.card_description_second_part}>
               Connect your wallet to view and use it elsewhere
             </p>
-          </div>
+          </div> */}
           <div id={styles.eth_card} className="p-3 justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5">
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">

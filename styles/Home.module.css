@@ -382,6 +382,22 @@ License: MIT
     radial-gradient(at 100% 0%, rgb(85, 5, 105) 0, transparent 50%);
 }
 
+.nft_page {
+  color: white;
+}
+
+#nft_construct {
+  color: white;
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 30px;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #creators_title,
 #docs_title {
   font-family: 'Sanchez', serif;
@@ -533,6 +549,16 @@ License: MIT
 
   #opensource_description {
     text-align: left;
+  }
+
+  #nft_construct {
+    font-weight: 900;
+    font-size: 15px;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .footer {
