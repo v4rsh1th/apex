@@ -80,6 +80,9 @@ const Features = () => {
           <p style={{ "fontFamily": "Sanchez", "textDecoration": "underline", "cursor": "pointer" }} >
             <a href="https://github.com/v4rsh1th/apex" target={"_blank"} rel="noopener noreferrer" >Contribute on GitHub <i className="bi bi-github"></i></a>
           </p>
+          <br />
+          <br />
+          &copy; 2022 ApexChain
         </div>
       </div>
     </div>
