@@ -38,7 +38,7 @@ export default function Docs() {
               <br /><br />
               Once you are connected, you will be able to send assets from your wallet to your friends&apos;.
               <br /><br />
-              a. Go to <u><a href="https://metamask.io/">https://metamask.io/</a></u> and download on your browser.
+              a. Go to <u><a href="https://metamask.io/" target={"_blank"} rel="noreferrer noopener" >https://metamask.io/</a></u> and download on your browser.
               <br />
               b. Create your wallet in there and make sure you keep your secret recovery phrase safe.
               <br />

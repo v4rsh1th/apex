@@ -21,12 +21,11 @@ const getEthereumContract = () => {
 
 export const TransactionProvider = ({ children }) => {
   const [currentAccount, setCurrentAccount] = useState();
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     addressTo: "",
-    amount: ""
+    amount: "",
   });
-
-  const [isLoading, setIsLoading] = useState(false);
 
   const handle_change = (e, name) => {
     setFormData(prevState => ({ ...prevState, [name]: e.target.value }));
@@ -58,51 +57,6 @@ export const TransactionProvider = ({ children }) => {
     }
   }
 
-  const sendTransaction = async (connectedAccount = currentAccount) => {
-    try {
-      if (!ethereum) return alert("Please install Metamask.");
-
-      const { addressTo, amount } = formData;
-      const transactionContract = getEthereumContract();
-      const parsedAmount = ethers.utils.parseEther(amount);
-
-      await ethereum.request({
-        method: "eth_sendTransaction",
-        params: [{
-          from: connectedAccount,
-          to: addressTo,
-          gas: "0x5208",
-          value: parsedAmount._hex,
-        }]
-      });
-
-      const transactionHash = await transactionContract.addToBlockchain(
-        addressTo,
-        parsedAmount,
-        `Transferring ETH ${parsedAmount} to ${addressTo}`,
-      );
-
-      setIsLoading(true);
-      console.log(`Loading - ${transactionHash.hash}`);
-
-      await transactionHash.wait();
-
-      // Sanity fn
-      // await saveTransaction(
-      //   transactionHash.hash,
-      //   amount,
-      //   connectedAccount,
-      //   addressTo
-      // )
-
-      setIsLoading(false);
-      console.log(`Success - ${transactionHash.hash}`);
-    } catch (error) {
-      console.error(error);
-      // throw new Error("No ethereum object.");
-    }
-  }
-
   // const saveTransaction = async (txHash, amount, fromAddress = currentAccount, toAddress) => {
   //   const txDoc = {
   //     _type: "transactions",
@@ -129,6 +83,52 @@ export const TransactionProvider = ({ children }) => {
 
   //   return
   // }
+
+  const sendTransaction = async (connectedAccount = currentAccount) => {
+    try {
+      if (!ethereum) return alert("Please install Metamask.");
+
+      const { addressTo, amount } = formData;
+      const transactionContract = getEthereumContract();
+      const parsedAmount = ethers.utils.parseEther(amount);
+
+      await ethereum.request({
+        method: "eth_sendTransaction",
+        params: [{
+          from: connectedAccount,
+          to: addressTo,
+          gas: "0x5208",
+          value: parsedAmount._hex,
+        }]
+      });
+
+      const transactionHash = await transactionContract.addToBlockchain(
+        addressTo,
+        parsedAmount,
+        `Transferring ETH ${parsedAmount} to ${addressTo}`,
+        "TRANSFER",
+      );
+
+      setIsLoading(true);
+
+      console.log(`Loading - ${transactionHash.hash}`);
+
+      await transactionHash.wait();
+
+      // Sanity fn
+      // await saveTransaction(
+      //   transactionHash.hash,
+      //   amount,
+      //   connectedAccount,
+      //   addressTo,
+      // )
+
+      setIsLoading(false);
+      console.log(`Success - ${transactionHash.hash}`);
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
   useEffect(() => {
     checkIfWalletIsConnected();
