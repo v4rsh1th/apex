@@ -104,9 +104,7 @@ export const TransactionProvider = ({ children }) => {
 
       const transactionHash = await transactionContract.addToBlockchain(
         addressTo,
-        parsedAmount,
-        `Transferring ETH ${parsedAmount} to ${addressTo}`,
-        "TRANSFER",
+        parsedAmount
       );
 
       setIsLoading(true);
