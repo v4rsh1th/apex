@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import Image from 'next/image';
-// import { AiFillPlayCircle } from 'react-icons/ai';
 import wallet from "../public/wallet.svg";
 import ethlogo from '../public/ethereum_eth_logo.svg';
 import eth from "../public/eth.svg";
