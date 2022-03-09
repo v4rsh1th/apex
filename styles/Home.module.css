@@ -584,7 +584,7 @@ License: MIT
 
   .license_container,
   .docs_container {
-    max-width: 80%;
+    max-width: 85%;
     margin: 30px auto;
     font-family: 'Sanchez', serif;
   } 
