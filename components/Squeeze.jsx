@@ -17,7 +17,7 @@ const Squeeze = () => {
     e.preventDefault();
     if (!addressTo || !amount) return;
     sendTransaction();
-  }
+  };
 
   return (
     <div id={styles.welcome_start} className="flex w-full justify-center item-center">
@@ -134,6 +134,6 @@ const Squeeze = () => {
         </div>
       </div>
     </div >
-  )
-}
+  );
+};
 export default Squeeze;

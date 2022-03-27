@@ -3,7 +3,7 @@ const main = async () => {
   const transactions = await Transactions.deploy();
   await transactions.deployed();
   console.log("Transactions deployed to:", transactions.address);
-}
+};
 
 const runMain = async () => {
   try {
@@ -13,6 +13,6 @@ const runMain = async () => {
     console.error(error);
     process.exit(1);
   }
-}
+};
 
 runMain();

@@ -17,7 +17,7 @@ const getEthereumContract = () => {
     signer
   );
   return transactionContract;
-}
+};
 
 export const TransactionProvider = ({ children }) => {
   const [currentAccount, setCurrentAccount] = useState();
@@ -29,7 +29,7 @@ export const TransactionProvider = ({ children }) => {
 
   const handle_change = (e, name) => {
     setFormData(prevState => ({ ...prevState, [name]: e.target.value }));
-  }
+  };
 
   const checkIfWalletIsConnected = async () => {
     try {
@@ -44,7 +44,7 @@ export const TransactionProvider = ({ children }) => {
       console.error(error);
       throw new Error("No ethereum object.");
     }
-  }
+  };
 
   const connectWallet = async () => {
     try {
@@ -55,7 +55,7 @@ export const TransactionProvider = ({ children }) => {
       console.error(error);
       throw new Error("No ethereum object.");
     }
-  }
+  };
 
   // const saveTransaction = async (txHash, amount, fromAddress = currentAccount, toAddress) => {
   //   const txDoc = {
@@ -126,7 +126,7 @@ export const TransactionProvider = ({ children }) => {
     } catch (error) {
       console.error(error);
     }
-  }
+  };
 
   useEffect(() => {
     checkIfWalletIsConnected();
@@ -143,5 +143,5 @@ export const TransactionProvider = ({ children }) => {
     }}>
       {children}
     </TransactionContext.Provider>
-  )
-}
+  );
+};
