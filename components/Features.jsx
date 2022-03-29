@@ -83,6 +83,13 @@ const Features = () => {
           <br />
           <br />
           &copy; 2022 ApexChain
+          <br />
+          <br />
+          <p id={styles.status}>
+            <Link href="/status">
+              <a>🟢 Status </a>
+            </Link>
+          </p>
         </div>
       </div>
     </div>
