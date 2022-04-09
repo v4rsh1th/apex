@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import wallet from "../public/wallet.svg";
 import ethlogo from '../public/ethereum_eth_logo.svg';
 import eth from "../public/eth.svg";
@@ -104,14 +105,14 @@ const Squeeze = () => {
               </div>
             </div>
           </div>
-          <div className={styles.etherscan_block}>
-            <p><a href="https://ropsten.etherscan.io/" target={"_blank"} rel="noopener noreferrer" >Etherscan ↝</a></p>
-          </div>
-          <br />
-          <div id={styles.card_description} style={{ fontSize: "11.5px" }}>
-            Using Etherscan can help you understand exactly how you interact with the blockchain, other wallets, and DApps. This knowledge can also help you stay safe and spot suspicious behavior.
-          </div>
-          <div id={styles.ugQLp} className="p-5 sm:w-96 w-full flex flex-col justify-start items-center text-white">
+
+
+          {/* ########## */}
+          {/* ########## */}
+          {/* ########## */}
+          {/* ########## */}
+
+          {/* <div id={styles.ugQLp} className="p-5 sm:w-96 w-full flex flex-col justify-start items-center text-white">
             <div id={styles.swap_text}>Transfer</div>
             <input id={styles.input_block_two} name="addressTo" type="text" placeholder="0x address" onChange={e => handle_change(e, 'addressTo')} />
             <div id={styles.arrow}>
@@ -130,6 +131,35 @@ const Squeeze = () => {
                 Send
               </button>
             )}
+          </div> */}
+
+          {/* ########## */}
+          {/* ########## */}
+          {/* ########## */}
+          {/* ########## */}
+
+          <div>
+            {!currentAccount ? (
+              <p style={{ "color": "white", "fontSize": "18px", "fontFamily": "Roboto Mono, monospace", "fontWeight": "600" }}>
+                <br />
+                🔴 Not connected to the network
+              </p>
+            ) : (
+              <p>
+                <Link href="/app">
+                  <button className={styles.go_to_app_button}>Launch the app</button>
+                </Link>
+              </p>
+            )
+            }
+          </div>
+          <br />
+          <div className={styles.etherscan_block}>
+            <p><a href="https://ropsten.etherscan.io/" target={"_blank"} rel="noopener noreferrer" >Etherscan ↝</a></p>
+          </div>
+          <br />
+          <div id={styles.card_description} style={{ fontSize: "11.5px" }}>
+            Using Etherscan can help you understand exactly how you interact with the blockchain, other wallets, and DApps. This knowledge can also help you stay safe and spot suspicious behavior.
           </div>
         </div>
       </div>

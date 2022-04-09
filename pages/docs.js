@@ -23,7 +23,7 @@ export default function Docs() {
         <div className={styles.docs_container}>
           <div className={styles.github}>
             <p style={{ "fontFamily": "Sanchez", "textDecoration": "underline", "cursor": "pointer" }} >
-              <a href="https://github.com/v4rsh1th/apex" target={"_blank"} rel="noopener noreferrer" >Contribute on GitHub <i className="bi bi-github"></i></a>
+              <a href="https://github.com/v4rsh1th/apex/pull" target={"_blank"} rel="noopener noreferrer" >Contribute on GitHub <i className="bi bi-github"></i></a>
             </p><br />
             <p id={styles.opensource_description}>
               <strong>ApexChain</strong> is Open Source under MIT License and is open for anyone to contribute.

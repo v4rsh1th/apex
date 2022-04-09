@@ -11,6 +11,7 @@ License: MIT
 @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 #navbar_links {
   font-family: 'Sanchez', serif;
@@ -53,11 +54,24 @@ License: MIT
   cursor: pointer;
   border: 0;
   border-radius: 8px;
-  color: white;
   padding: 10px;
   font-size: 15px;
   font-weight: bold;
   text-align: center;
+}
+
+.connect_btn_navbar {
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline;
+  color: black;
+  cursor: pointer;
+  color: white;
+  box-shadow: rgb(255 149 238) 0px 0px 0px 0px;
+  transform: scale(1);
+  animation: 2s ease 0s infinite normal none running pulse;
+  font-size: 18px;
+  transition: all .2s ease-in-out;
 }
 
 .connect_btn_navbar:hover,
@@ -235,6 +249,27 @@ License: MIT
 #eth_card {
   background-color: #5d4257;
   background-image: linear-gradient(315deg, #5d4257 0%, #90b8a5 74%);
+
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-10px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
 
 #eth_card_address {
@@ -276,6 +311,7 @@ License: MIT
   background: rgb(25, 27, 31);
   box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px, rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
   border-radius: 24px;
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
@@ -406,6 +442,76 @@ License: MIT
   padding-top: 50px;
   font-size: 80px;
   text-decoration: overline;
+}
+
+.mainapp_page {
+  color: rgb(255, 255, 255);
+  background-color: #212429;
+}
+
+#mainapp_title {
+  font-family: 'Sanchez', serif;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+  text-decoration: overline;
+}
+
+.mainapp_container {
+  display: flex;
+  max-width: 80%;
+  margin: 30px auto;
+  gap: 150px;
+  align-items: center;
+
+  padding-bottom: 9%;
+}
+
+#eth_card_mainapp {
+  background-color: #5d4257;
+  background-image: linear-gradient(315deg, #5d4257 0%, #90b8a5 74%);
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+}
+
+.go_to_app_button {
+  /* background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%); */
+
+  background-color: #d8dede;
+  background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
+
+  border-radius: 99px;
+  text-decoration: none;
+  display: inline;
+  padding: 15px 30px;
+  margin-top: 2rem;
+  color: black;
+  cursor: pointer;
+  box-shadow: rgb(255 149 238) 0px 0px 0px 0px;
+  transform: scale(1);
+  animation: 2s ease 0s infinite normal none running pulse;
+  font-size: 28px;
+  font-weight: 800;
+  color: rgb(107, 17, 56);
+  line-height: 1.5;
+  transition: all .2s ease-in-out;
+}
+
+@keyframes pulse {
+
+0% {
+  transform: scale(.99);
+  box-shadow: 0 0 0 0 rgb(255 149 238 / 70%);
+}
+
+70% {
+  transform: scale(1);
+  box-shadow: 0 0 0 20px rgb(255 149 238 / 0%);
+}
+100% {
+  transform: scale(.99);
+  box-shadow: 0 0 0 0 rgb(255 149 238 / 0%);
+}
 }
 
 #punks_container {

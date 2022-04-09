@@ -36,13 +36,13 @@ const Navbar = () => {
         </li>
         <li>
           {!currentAccount ? (
-            <button
-              className={styles.connect_btn_navbar}
+            <button className={styles.connect_btn_navbar}
               type="button"
               onClick={connectWallet}
             >
               Connect to Wallet
-            </button>) :
+            </button>
+          ) :
             <div className={styles.after_connected_address_small}>
               <div className={styles.address_pic_navbar}>
                 <div className={styles.address_picture_navbar}>
