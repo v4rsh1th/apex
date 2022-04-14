@@ -564,7 +564,8 @@ License: MIT
 }
 }
 
-#punks_container {
+#punks_container,
+#traits_container {
   display: flex;
   max-width: 80%;
   margin: 30px auto;
@@ -580,7 +581,8 @@ License: MIT
   justify-content: space-between;
 }
 
-.punks_name {
+.punks_name,
+.traits_name {
   background: linear-gradient(315deg, #314188 0%, #dd94ff 74%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -590,9 +592,12 @@ License: MIT
   margin-bottom: 30px;
 }
 
-.punks_description {
-  font-family: 'Sanchez', serif;
-  font-size: 18px;
+.punks_description,
+.traits_description {
+  font-family: "PT Mono", monospace;
+  font-size: 15px;
+  color: wheat;
+  text-align: left;
 }
 
 #punkpic {
@@ -680,6 +685,10 @@ License: MIT
 @media only screen and (max-width: 600px) {
   #apexlogo {
     width: 50px;
+  }
+
+  #traits_container {
+    display: block;
   }
 
   #card_description {

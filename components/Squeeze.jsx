@@ -9,6 +9,7 @@ import styles from '../styles/Home.module.css';
 import { TransactionContext } from '../context/TransactionContext';
 import { Loader } from './Loader';
 import { shortenAddress } from '../utils/shortenAddress';
+import Traits from './Traits';
 
 const Squeeze = () => {
   const { connectWallet, currentAccount } = useContext(TransactionContext);
@@ -149,6 +150,7 @@ const Squeeze = () => {
           {/* ########## */}
           {/* ########## */}
           {/* ########## */}
+
           <br />
           <div>
             {!currentAccount ? (
@@ -182,6 +184,9 @@ const Squeeze = () => {
                 {blockNum}
               </p>
             </div>
+          </div>
+          <div>
+            <Traits />
           </div>
         </div>
       </div>
