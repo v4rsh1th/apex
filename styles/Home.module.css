@@ -227,14 +227,28 @@ License: MIT
   margin-left: 10px;
 }
 
-#currentblock_title {
-  color: #9eabe4;
-  margin-bottom: 10px;
+#notconnected_text {
+  color: white;
 }
 
-.currentblock_count {
+#currentblock_title {
+  color: #9eabe4;
+}
+
+.currentblock_count,
+.notconnected_warning_block {
   display: flex;
   text-align: center;
+}
+
+.red_dot_currentblock {
+  width: 8px;
+  height: 8px;
+  margin-top: 7px;
+  border-radius: 50%;
+  position: relative;
+  background-color: rgb(226, 12, 12);
+  animation: blinker 1s linear infinite;
 }
 
 .green_dot_currentblock {
@@ -449,6 +463,10 @@ License: MIT
   background-image:
     radial-gradient(at -30% 57%, rgb(36, 23, 104) 0, transparent 50%), 
     radial-gradient(at 100% 0%, rgb(85, 5, 105) 0, transparent 50%);
+}
+
+.status_page {
+  color: white;
 }
 
 .nft_page {

@@ -152,10 +152,14 @@ const Squeeze = () => {
           {/* ########## */}
           <div>
             {!currentAccount ? (
-              <p style={{ "color": "white", "fontSize": "18px", "fontFamily": "Roboto Mono, monospace", "fontWeight": "600" }}>
+              <p style={{ "color": "white", "fontSize": "16px" }}>
                 <br />
-                🔴 Not connected to the network
+                <div className={styles.notconnected_warning_block}>
+                  <p className={styles.red_dot_currentblock}></p> &nbsp; &nbsp;
+                  <p id={styles.notconnected_text}>Not connected to the network</p> &nbsp; &nbsp;
+                </div>
               </p>
+
             ) : (
               <p>
                 <Link href="/app">
@@ -176,8 +180,9 @@ const Squeeze = () => {
           <br />
 
           <div>
-            <p id={styles.currentblock_title}>Latest block mined</p>
+
             <div className={styles.currentblock_count}>
+              <p id={styles.currentblock_title}>Latest block mined</p> &nbsp; &nbsp;
               <p className={styles.green_dot_currentblock}></p> &nbsp; &nbsp;
               <p className={styles.currentblock_dynamic_number}>
                 {blockNum}
