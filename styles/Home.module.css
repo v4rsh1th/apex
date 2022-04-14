@@ -12,6 +12,7 @@ License: MIT
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 
 #navbar_links {
   font-family: 'Sanchez', serif;
@@ -224,6 +225,31 @@ License: MIT
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 10px;
+}
+
+#currentblock_title {
+  color: #9eabe4;
+  margin-bottom: 10px;
+}
+
+.currentblock_count {
+  display: flex;
+  text-align: center;
+}
+
+.green_dot_currentblock {
+  width: 8px;
+  height: 8px;
+  margin-top: 6px;
+  border-radius: 50%;
+  position: relative;
+  background-color: rgb(9, 245, 107);
+  transition: background-color 250ms ease 0s;
+}
+
+.currentblock_dynamic_number {
+  color: white;
+  font-family: 'PT Mono', monospace;
 }
 
 #card_description {

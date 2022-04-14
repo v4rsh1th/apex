@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import wallet from "../public/wallet.svg";
@@ -11,14 +11,27 @@ import { Loader } from './Loader';
 import { shortenAddress } from '../utils/shortenAddress';
 
 const Squeeze = () => {
-  const { connectWallet, currentAccount, formData, sendTransaction, handle_change } = useContext(TransactionContext);
+  const { connectWallet, currentAccount } = useContext(TransactionContext);
 
-  const handleSubmit = (e) => {
-    const { addressTo, amount } = formData;
-    e.preventDefault();
-    if (!addressTo || !amount) return;
-    sendTransaction();
-  };
+  // const { connectWallet, currentAccount, formData, sendTransaction, handle_change } = useContext(TransactionContext);
+  // const handleSubmit = (e) => {
+  //   const { addressTo, amount } = formData;
+  //   e.preventDefault();
+  //   if (!addressTo || !amount) return;
+  //   sendTransaction();
+  // };
+
+  const [blockNum, setBlockNum] = useState("");
+
+  useEffect(() => {
+    fetch(
+      "https://api-ropsten.etherscan.io/api?module=block&action=getblockcountdown&blockno=16701588&apikey=7G931A9HTSS98HN78JJKVNZ2TTAPJEMYJN"
+    )
+      .then((response) => response.json())
+      .then((result) => {
+        setBlockNum(result.result.CurrentBlock);
+      });
+  });
 
   return (
     <div id={styles.welcome_start} className="flex w-full justify-center item-center">
@@ -137,7 +150,6 @@ const Squeeze = () => {
           {/* ########## */}
           {/* ########## */}
           {/* ########## */}
-
           <div>
             {!currentAccount ? (
               <p style={{ "color": "white", "fontSize": "18px", "fontFamily": "Roboto Mono, monospace", "fontWeight": "600" }}>
@@ -161,6 +173,18 @@ const Squeeze = () => {
           <div id={styles.card_description} style={{ fontSize: "11.5px" }}>
             Using Etherscan can help you understand exactly how you interact with the blockchain, other wallets, and DApps. This knowledge can also help you stay safe and spot suspicious behavior.
           </div>
+          <br />
+
+          <div>
+            <p id={styles.currentblock_title}>Latest block mined</p>
+            <div className={styles.currentblock_count}>
+              <p className={styles.green_dot_currentblock}></p> &nbsp; &nbsp;
+              <p className={styles.currentblock_dynamic_number}>
+                {blockNum}
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div >
