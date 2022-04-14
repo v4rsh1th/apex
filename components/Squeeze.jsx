@@ -119,7 +119,6 @@ const Squeeze = () => {
             </div>
           </div>
 
-
           {/* ########## */}
           {/* ########## */}
           {/* ########## */}
@@ -150,16 +149,13 @@ const Squeeze = () => {
           {/* ########## */}
           {/* ########## */}
           {/* ########## */}
+          <br />
           <div>
             {!currentAccount ? (
-              <p style={{ "color": "white", "fontSize": "16px" }}>
-                <br />
-                <div className={styles.notconnected_warning_block}>
-                  <p className={styles.red_dot_currentblock}></p> &nbsp; &nbsp;
-                  <p id={styles.notconnected_text}>Not connected to the network</p> &nbsp; &nbsp;
-                </div>
-              </p>
-
+              <div className={styles.notconnected_warning_block}>
+                <p className={styles.red_dot_currentblock}></p> &nbsp; &nbsp;
+                <p id={styles.notconnected_text}>Not connected to the network</p> &nbsp; &nbsp;
+              </div>
             ) : (
               <p>
                 <Link href="/app">
@@ -178,9 +174,7 @@ const Squeeze = () => {
             Using Etherscan can help you understand exactly how you interact with the blockchain, other wallets, and DApps. This knowledge can also help you stay safe and spot suspicious behavior.
           </div>
           <br />
-
           <div>
-
             <div className={styles.currentblock_count}>
               <p id={styles.currentblock_title}>Latest block mined</p> &nbsp; &nbsp;
               <p className={styles.green_dot_currentblock}></p> &nbsp; &nbsp;
@@ -189,7 +183,6 @@ const Squeeze = () => {
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </div >
