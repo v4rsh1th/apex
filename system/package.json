@@ -17,6 +17,7 @@
     "hardhat": "^2.9.3"
   },
   "dependencies": {
+    "async": "^3.2.3",
     "minimist": "^1.2.6"
   }
 }
