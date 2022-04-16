@@ -4,6 +4,7 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import metamask_setup from '../public/pix/metamask.png';
 import connect_wallet from '../public/pix/connect.png';
+import transfer_ from '../public/pix/transfer_.svg';
 
 export default function Docs() {
   return (
@@ -46,7 +47,7 @@ export default function Docs() {
             </p>
             <br />
             <div className={styles.docs_pics}>
-              <Image src={metamask_setup} alt="Metamask setup" layout="responsive" />
+              <Image src={metamask_setup} alt="Metamask setup" layout="responsive" priority />
             </div>
             <br /><br />
             <h1 id={styles.docs_content_heading}>
@@ -61,7 +62,22 @@ export default function Docs() {
             </p>
             <br />
             <div className={styles.docs_pics}>
-              <Image src={connect_wallet} alt="Connect to your wallet" layout="responsive" />
+              <Image src={connect_wallet} alt="Connect to your wallet" layout="responsive" priority />
+            </div>
+            <br /><br />
+            <h1 id={styles.docs_content_heading}>
+              TRANSFER
+            </h1>
+            <p id={styles.docs_explanation}>
+              a. The first input field is where you will have to enter the wallet address that you are sending the assets to (recipient).
+              <br />
+              b. The second input field is where you will have to enter the amount of assets that you sending.
+              <br />
+              c. Hit &quot;Send&quot; and a Metamask popup should appear asking for the confirmation.
+            </p>
+            <br />
+            <div className={styles.docs_pics}>
+              <Image src={transfer_} alt="Connect to your wallet" layout="responsive" priority />
             </div>
           </div>
         </div>
