@@ -739,6 +739,10 @@ License: MIT
     transform: translate(-50%, -50%);
   }
 
+  .mainapp_container {
+    display: block;
+  }
+
   .footer {
     display: block;
   }
