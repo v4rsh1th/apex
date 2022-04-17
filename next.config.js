@@ -9,4 +9,4 @@ module.exports = withPWA({
     skipWaiting: true,
     disable: prod ? false : true,
   }
-})
+});
