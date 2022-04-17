@@ -57,33 +57,6 @@ export const TransactionProvider = ({ children }) => {
     }
   };
 
-  // const saveTransaction = async (txHash, amount, fromAddress = currentAccount, toAddress) => {
-  //   const txDoc = {
-  //     _type: "transactions",
-  //     _id: txHash,
-  //     fromAddress: fromAddress,
-  //     toAddress: toAddress,
-  //     timestamp: new Date(Date.now()).toISOString(),
-  //     txHash: txHash,
-  //     amount: parseFloat(amount)
-  //   }
-  //   await client.createIfNotExists(txDoc)
-
-  //   await client
-  //     .patch(currentAccount)
-  //     .setIfMissing({ transactions: [] })
-  //     .insert('after', 'transactions[-1]', [
-  //       {
-  //         _key: txHash,
-  //         _ref: txHash,
-  //         _type: "reference"
-  //       },
-  //     ])
-  //     .commit()
-
-  //   return
-  // }
-
   const sendTransaction = async (connectedAccount = currentAccount) => {
     try {
       if (!ethereum) return alert("Please install Metamask.");
@@ -106,21 +79,9 @@ export const TransactionProvider = ({ children }) => {
         addressTo,
         parsedAmount
       );
-
       setIsLoading(true);
-
       console.log(`Loading - ${transactionHash.hash}`);
-
       await transactionHash.wait();
-
-      // Sanity fn
-      // await saveTransaction(
-      //   transactionHash.hash,
-      //   amount,
-      //   connectedAccount,
-      //   addressTo,
-      // )
-
       setIsLoading(false);
       console.log(`Success - ${transactionHash.hash}`);
     } catch (error) {
