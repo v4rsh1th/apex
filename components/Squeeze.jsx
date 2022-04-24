@@ -26,7 +26,7 @@ const Squeeze = () => {
 
   useEffect(() => {
     fetch(
-      "https://api-ropsten.etherscan.io/api?module=block&action=getblockcountdown&blockno=16701588&apikey=7G931A9HTSS98HN78JJKVNZ2TTAPJEMYJN"
+      "https://api-ropsten.etherscan.io/api?module=block&action=getblockcountdown&blockno=16701588&apikey=ZFISFRVIBGB5J47WGP9BNR9JCVA2RANATS"
     )
       .then((response) => response.json())
       .then((result) => {
@@ -193,4 +193,5 @@ const Squeeze = () => {
     </div >
   );
 };
+
 export default Squeeze;
