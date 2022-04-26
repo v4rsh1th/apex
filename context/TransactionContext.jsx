@@ -83,15 +83,39 @@ export const TransactionProvider = ({ children }) => {
       const transactionContract = getEthereumContract();
       const parsedAmount = ethers.utils.parseEther(amount);
 
-      await ethereum.request({
-        method: "eth_sendTransaction",
-        params: [{
-          from: connectedAccount,
-          to: addressTo,
-          gas: "0x5208",
-          value: parsedAmount._hex,
-        }]
-      });
+      // await ethereum.request({
+      //   method: "eth_sendTransaction",
+      //   params: [{
+      //     from: connectedAccount,
+      //     to: addressTo,
+      //     gas: "0x5208",
+      //     value: parsedAmount._hex,
+      //   }]
+      // });
+
+      // ####
+
+      const _txHash = await window.ethereum
+        .request({
+          method: 'eth_sendTransaction',
+          params: [{
+            from: connectedAccount,
+            to: addressTo,
+            gas: "0x5208",
+            value: parsedAmount._hex,
+          }],
+        });
+
+      document.getElementById("tx_message").innerHTML =
+        "<u>Check transaction details here </u>- <br /><br /><br />" +
+        "<b>Transaction is initiated. </b> <br/><br/>" +
+        "Transaction Hash: " + _txHash;
+
+      console.log(_txHash);
+      console.log("https://ropsten.etherscan.io/tx/" + _txHash);
+
+      // ####
+
 
       const transactionHash = await transactionContract.addToBlockchain(
         addressTo,

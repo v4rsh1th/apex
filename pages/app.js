@@ -73,7 +73,13 @@ export default function MainApp() {
             )}
           </div>
         </div>
-      </div>
-    </div>
+        &nbsp; <br /><br />
+        <p id="tx_message" className={styles.tx_message}></p>
+        {/* <p className={styles.tx_message}>
+          Transaction is initiated.<br /><br />
+          Transaction Hash: 0xklegkal0xsngk <br /> <br /><br />
+        </p> */}
+      </div >
+    </div >
   );
 };

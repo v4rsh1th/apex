@@ -363,6 +363,12 @@ License: MIT
   z-index: 1;
 }
 
+.tx_message {
+  max-width: 80%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
 #swap_text {
   margin: 0px;
   min-width: 0px;
@@ -513,7 +519,7 @@ License: MIT
   gap: 150px;
   align-items: center;
 
-  padding-bottom: 9%;
+  /* padding-bottom: 6%; */
 }
 
 #eth_card_mainapp {
@@ -741,6 +747,10 @@ License: MIT
 
   .mainapp_container {
     display: block;
+  }
+
+  #ugQLp {
+    margin-top: 60px;
   }
 
   .footer {
