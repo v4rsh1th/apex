@@ -42,18 +42,36 @@ export const TransactionProvider = ({ children }) => {
       }
     } catch (error) {
       console.error(error);
-      throw new Error("No ethereum object.");
+      // throw new Error("No ethereum object.");
     }
   };
 
+
+  // ######
+  // ######
+  // ######
+
+  // const connectWallet = async () => {
+  //   try {
+  //     if (!ethereum) return alert("Please install Metamask.");
+  //     const accounts = await ethereum.request({ method: "eth_requestAccounts" });
+  //     setCurrentAccount(accounts[0]);
+  //   } catch (error) {
+  //     console.error(error);
+  //     throw new Error("No ethereum object.");
+  //   }
+  // };
+
+  // ######
+  // ######
+  // ######
+
   const connectWallet = async () => {
-    try {
-      if (!ethereum) return alert("Please install Metamask.");
-      const accounts = await ethereum.request({ method: "eth_requestAccounts" });
+    if (typeof window.ethereum !== 'undefined') {
+      const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
       setCurrentAccount(accounts[0]);
-    } catch (error) {
-      console.error(error);
-      throw new Error("No ethereum object.");
+    } else {
+      window.open("http://metamask.io");
     }
   };
 

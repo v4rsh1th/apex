@@ -30,7 +30,7 @@ License: MIT
 .after_connected_address_big {
   background-color: rgba(21, 61, 111, 0.44);
   /* border: 2px solid rgba(255, 251, 251, 0.44); */
-  border: 10px solid rgba(181, 84, 214, 0.44);
+  border: 10px solid rgba(126, 29, 159, 0.44);
   color: rgb(80, 144, 234);
   box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px, rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
   border-radius: 20px;
