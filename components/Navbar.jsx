@@ -25,8 +25,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li id={styles.navbar_links}>
-          <Link href="/nft">
-            <a>NFT</a>
+          <Link href="/verify">
+            <a>Verify</a>
           </Link>
         </li>
         <li id={styles.navbar_links}>
@@ -74,8 +74,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/nft">
-                <a>NFT</a>
+              <Link href="/verify">
+                <a>Verify</a>
               </Link>
             </li>
             <li>
