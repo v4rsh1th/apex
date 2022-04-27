@@ -542,12 +542,16 @@ License: MIT
   border: 0;
   font-size: 18px;
   font-weight: 600;
-  border-radius: 12px;
+  border-radius: 8px;
   background: #9147ff;
   box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
   text-align: center;
   margin-top: 30px;
   cursor: pointer;
+}
+
+.verify_button:hover {
+  opacity: 0.9;
 }
 
 #verify_description {
