@@ -366,6 +366,13 @@ License: MIT
 .tx_message {
   max-width: 80%;
   margin: auto;
+  padding-bottom: 6px;
+}
+
+.tx_hash {
+  font-family: 'PT Mono', monospace;
+  max-width: 80%;
+  margin: auto;
   padding-bottom: 30px;
 }
 

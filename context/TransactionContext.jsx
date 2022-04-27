@@ -93,7 +93,9 @@ export const TransactionProvider = ({ children }) => {
       //   }]
       // });
 
-      // ####
+      // ######
+      // ######
+      // ######
 
       const _txHash = await window.ethereum
         .request({
@@ -106,16 +108,19 @@ export const TransactionProvider = ({ children }) => {
           }],
         });
 
+      document.getElementById("tx_hash").innerHTML = _txHash;
+
       document.getElementById("tx_message").innerHTML =
-        "<u>Check transaction details here </u>- <br /><br /><br />" +
+        "<u>Check transaction details </u>- <br /><br /><br />" +
         "<b>Transaction is initiated. </b> <br/><br/>" +
-        "Transaction Hash: " + _txHash;
+        "Transaction Hash: ";
 
       console.log(_txHash);
       console.log("https://ropsten.etherscan.io/tx/" + _txHash);
 
-      // ####
-
+      // ######
+      // ######
+      // ######
 
       const transactionHash = await transactionContract.addToBlockchain(
         addressTo,

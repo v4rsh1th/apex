@@ -4,13 +4,20 @@ import Head from 'next/head';
 import ethlogo from '../public/ethereum_eth_logo.svg';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
+import Loader from '../components/Loader';
+
 import { TransactionContext } from '../context/TransactionContext';
 import { shortenAddress } from '../utils/shortenAddress';
 
-import Loader from '../components/Loader';
-
 export default function MainApp() {
-  const { connectWallet, currentAccount, formData, sendTransaction, handle_change } = useContext(TransactionContext);
+
+  const {
+    connectWallet,
+    currentAccount,
+    formData,
+    sendTransaction,
+    handle_change
+  } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
     const { addressTo, amount } = formData;
@@ -75,10 +82,7 @@ export default function MainApp() {
         </div>
         &nbsp; <br /><br />
         <p id="tx_message" className={styles.tx_message}></p>
-        {/* <p className={styles.tx_message}>
-          Transaction is initiated.<br /><br />
-          Transaction Hash: 0xklegkal0xsngk <br /> <br /><br />
-        </p> */}
+        <p id="tx_hash" className={styles.tx_hash}></p>
       </div >
     </div >
   );
