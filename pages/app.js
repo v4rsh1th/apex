@@ -83,6 +83,7 @@ export default function MainApp() {
         &nbsp; <br /><br />
         <p id="tx_message" className={styles.tx_message}></p>
         <p id="tx_hash" className={styles.tx_hash}></p>
+        <p id="link_to_verify" className={styles.link_to_verify}></p>
       </div >
     </div >
   );

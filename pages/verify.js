@@ -24,7 +24,9 @@ export default function Verify() {
             id="inputted_txhash"
             className={styles.inputted_txhash}
             placeholder="0x txhash"
-            autoFocus />
+            autoFocus
+          />
+
           <input type="button"
             className={styles.verify_button}
             id="verify_btn"

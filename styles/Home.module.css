@@ -509,6 +509,14 @@ License: MIT
   background-color: #212429;
 }
 
+.link_to_verify {
+  max-width: 1000px;
+  padding-bottom: 50px;
+  margin: auto;
+  font-family: 'Sanchez', serif;
+  text-decoration: underline;
+}
+
 .verify_page {
   background-color: #212429;
   color: white;
@@ -552,6 +560,10 @@ License: MIT
 
 .verify_button:hover {
   opacity: 0.9;
+}
+
+.verify_button:disabled {
+  cursor: not-allowed;
 }
 
 #verify_description {

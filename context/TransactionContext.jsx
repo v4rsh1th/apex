@@ -109,11 +109,11 @@ export const TransactionProvider = ({ children }) => {
         });
 
       document.getElementById("tx_hash").innerHTML = _txHash;
-
       document.getElementById("tx_message").innerHTML =
         "<u>Check transaction details </u>- <br /><br /><br />" +
         "<b>Transaction is initiated. </b> <br/><br/>" +
-        "Transaction Hash: ";
+        "Transaction Hash:";
+      document.getElementById("link_to_verify").innerHTML = "<a href='/verify' target='_blank'>Verify transaction</a>";
 
       console.log(_txHash);
       console.log("https://ropsten.etherscan.io/tx/" + _txHash);
