@@ -558,13 +558,25 @@ License: MIT
   cursor: pointer;
 }
 
-.verify_button:hover {
+.verify_button_polygon {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: hsl(235,calc(var(--saturation-factor,1)*85.6%),64.7%);
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.verify_button:hover,
+.verify_button_polygon:hover {
   opacity: 0.9;
 }
 
-.verify_button:disabled {
-  cursor: not-allowed;
-}
 
 #verify_description {
   position: relative;
@@ -573,12 +585,19 @@ License: MIT
   color: rgb(80, 144, 234);
   box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px, rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
   border-radius: 10px;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   padding: 8px;
   font-size: 14px;
   font-weight: 600;
+}
+
+.verify_links_route {
+  margin-top: 20px;
+  font-size: 13px;
+  text-decoration: underline;
+  font-family: 'Sanchez', serif;
 }
 
 #mainapp_title,
@@ -789,6 +808,7 @@ License: MIT
   #back_button {
     padding-left: 30px;
     padding-top: 30px;
+    font-size: 12px;
   }
 
   #creators_title,

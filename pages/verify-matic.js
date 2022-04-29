@@ -28,16 +28,17 @@ export default function Verify() {
           />
 
           <input type="button"
-            className={styles.verify_button}
+            className={styles.verify_button_polygon}
             id="verify_btn"
-            value="Verify"
+            value="Verify on Polygon"
+            style={{ "background": "hsl(235,calc(var(--saturation-factor,1)*85.6%),64.7%);" }}
             onClick={() => {
-              window.open("http://ropsten.etherscan.io/tx/" + document.getElementById("inputted_txhash").value);
+              window.open("http://mumbai.polygonscan.com/tx/" + document.getElementById("inputted_txhash").value);
             }}
           />
         </div>
         <div className={styles.verify_links_route}>
-          <Link href="/verify-matic">Verify on Polygon</Link>
+          <Link href="/verify">Verify on Ethereum</Link>
         </div>
         <div id={styles.verify_description}>
           The transactions you make on the blockchain are initiated and confirmed with a unique hash value that do not clash with any other transaction. You can verify every transaction by providing their hash value, since everything is open to public on blockchain.
