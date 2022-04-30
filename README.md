@@ -4,17 +4,19 @@ A decentralized system with an emphasis on security, transparency, reliability, 
 
 <hr>
 
-Navigate to ```/client``` & ```/system``` and pull up ```npm install``` or ```yarn install```
-
 ### Run local server:
-Move into ```/client``` and run ```npm run dev```
+Move into ```/``` :
+```
+npm run dev
+```
+Push to ```master``` branch to deploy.
 
-On a side note... UI is build with Next.js, darn fast.
+*On a side note... UI is build with Next.js. Darn fast.*
 
-<br>
+### Debugging with devtools:
 
-Push to ```master``` branch to deploy
+Supports using either VS Code debugger or Chrome DevTools.
+
+See official Next.js docs: https://nextjs.org/docs/advanced-features/debugging
 
 <hr>
-
-**Under active development.**
