@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css';
 import metamask_setup from '../public/pix/metamask.png';
 import connect_wallet from '../public/pix/connect.png';
 import transfer_ from '../public/pix/transfer_.svg';
+import verify_ from '../public/pix/verify.png';
 
 export default function Docs() {
   return (
@@ -50,6 +51,7 @@ export default function Docs() {
               <Image src={metamask_setup} alt="Metamask setup" layout="responsive" priority />
             </div>
             <br /><br />
+
             <h1 id={styles.docs_content_heading}>
               SIGN-IN WITH METAMASK TO APEXCHAIN
             </h1>
@@ -65,6 +67,7 @@ export default function Docs() {
               <Image src={connect_wallet} alt="Connect to your wallet" layout="responsive" priority />
             </div>
             <br /><br />
+
             <h1 id={styles.docs_content_heading}>
               TRANSFER
             </h1>
@@ -78,6 +81,20 @@ export default function Docs() {
             <br />
             <div className={styles.docs_pics}>
               <Image src={transfer_} alt="Connect to your wallet" layout="responsive" priority />
+            </div>
+            <br /><br />
+
+            <h1 id={styles.docs_content_heading}>
+              VERIFY
+            </h1>
+            <p id={styles.docs_explanation}>
+              a. Enter the transaction hash that is generated when the transaction was initiated, in the input box.
+              <br />
+              b. Also, &quot;Verify on Polygon&quot; takes you to verify the transaction that are made on Polygon.
+            </p>
+            <br />
+            <div className={styles.docs_pics}>
+              <Image src={verify_} alt="Connect to your wallet" layout="responsive" priority />
             </div>
           </div>
         </div>
