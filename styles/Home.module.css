@@ -13,6 +13,7 @@ License: MIT
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 
 #navbar_links {
   font-family: 'Sanchez', serif;
@@ -51,7 +52,8 @@ License: MIT
 .connect_btn_navbar {
   width: 100%;
   background-color: #f8ceec;
-  background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+  /* background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%); */
+  background-image: linear-gradient(90deg,#af2896,#509bf5);
   cursor: pointer;
   border: 0;
   border-radius: 8px;
@@ -62,6 +64,7 @@ License: MIT
 }
 
 .connect_btn_navbar {
+  font-size: 18px;
   border-radius: 50px;
   text-decoration: none;
   display: inline;
@@ -69,10 +72,9 @@ License: MIT
   cursor: pointer;
   color: white;
   box-shadow: rgb(255 149 238) 0px 0px 0px 0px;
-  transform: scale(1);
-  animation: 2s ease 0s infinite normal none running pulse;
-  font-size: 18px;
-  transition: all .2s ease-in-out;
+  /* transform: scale(1); */
+  /* animation: 2s ease 0s infinite normal none running pulse; */
+  /* transition: all .2s ease-in-out; */
 }
 
 .connect_btn_navbar:hover,
@@ -149,8 +151,9 @@ License: MIT
 }
 
 #bigger_btn {
-  background-color: #f8ceec;
-  background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+  /* background-color: #f8ceec; */
+  /* background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%); */
+  background-image: linear-gradient(to right,#cd38b1 0%,#5295e8 100%);
   text-align: center;
   border-radius: 10px;
 }
