@@ -783,8 +783,12 @@ License: MIT
 }
 
 #status {
+  border: 2px solid gray;
+  background: gray;
+  border-radius: 5px;
+  width: 70%;
+  text-align: center;
   font-size: 15px;
-  font-weight: 800;
 }
 
 @media only screen and (max-width: 600px) {
@@ -884,5 +888,9 @@ License: MIT
     max-width: 85%;
     margin: 30px auto;
     font-family: 'Sanchez', serif;
-  } 
+  }
+
+  #status {
+    width: 80%;
+  }
 }
