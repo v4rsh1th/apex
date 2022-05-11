@@ -1,4 +1,9 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, {
+  useContext,
+  useState,
+  useEffect
+} from 'react';
+import { ethers } from "ethers";
 import Image from 'next/image';
 import Link from 'next/link';
 import wallet from "../public/wallet.svg";
@@ -25,13 +30,15 @@ const Squeeze = () => {
   const [blockNum, setBlockNum] = useState("");
 
   useEffect(() => {
-    fetch(
-      "https://api-ropsten.etherscan.io/api?module=block&action=getblockcountdown&blockno=16701588&apikey=ZFISFRVIBGB5J47WGP9BNR9JCVA2RANATS"
-    )
-      .then((response) => response.json())
-      .then((result) => {
-        setBlockNum(result.result.CurrentBlock);
-      });
+    const runBlockCount = async () => {
+      const ethersBlockNumber = await ethers.providers.getDefaultProvider("ropsten");
+      ethersBlockNumber.getBlockNumber()
+        .then((blockNumber) => {
+          setBlockNum(blockNumber);
+        });
+    };
+    runBlockCount();
+    setInterval(runBlockCount, 6000);
   });
 
   return (
