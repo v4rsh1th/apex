@@ -86,7 +86,7 @@ const Features = () => {
           <br />
           <br />
           <p id={styles.status}>
-            <a href="https://apexchain.statuspage.io/" target={"_blank"} rel="noopener noreferrer">🟢 <strong>Status:</strong> All systems operational.</a>
+            <a href="https://apexchain.statuspage.io/" target={"_blank"} rel="noopener noreferrer">🟢 <strong>Status:</strong> All systems operational</a>
           </p>
         </div>
       </div>
