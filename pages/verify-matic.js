@@ -33,7 +33,7 @@ export default function Verify() {
             value="Verify on Polygon"
             style={{ "background": "hsl(235,calc(var(--saturation-factor,1)*85.6%),64.7%);" }}
             onClick={() => {
-              window.open("http://mumbai.polygonscan.com/tx/" + document.getElementById("inputted_txhash").value);
+              window.open("https://mumbai.polygonscan.com/tx/" + document.getElementById("inputted_txhash").value);
             }}
           />
         </div>

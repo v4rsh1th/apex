@@ -32,7 +32,7 @@ export default function Verify() {
             id="verify_btn"
             value="Verify"
             onClick={() => {
-              window.open("http://ropsten.etherscan.io/tx/" + document.getElementById("inputted_txhash").value);
+              window.open("https://ropsten.etherscan.io/tx/" + document.getElementById("inputted_txhash").value);
             }}
           />
         </div>

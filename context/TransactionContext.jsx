@@ -71,7 +71,7 @@ export const TransactionProvider = ({ children }) => {
       const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
       setCurrentAccount(accounts[0]);
     } else {
-      window.open("http://metamask.io");
+      window.open("https://metamask.io");
     }
   };
 
