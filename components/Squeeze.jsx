@@ -31,7 +31,7 @@ const Squeeze = () => {
 
   useEffect(() => {
     const runBlockCount = async () => {
-      const ethersBlockNumber = await ethers.providers.getDefaultProvider("ropsten");
+      const ethersBlockNumber = await ethers.providers.getDefaultProvider("rinkeby");
       ethersBlockNumber.getBlockNumber()
         .then((blockNumber) => {
           setBlockNum(blockNumber);
@@ -176,7 +176,7 @@ const Squeeze = () => {
           </div>
           <br />
           <div className={styles.etherscan_block}>
-            <p><a href="https://ropsten.etherscan.io/" target={"_blank"} rel="noopener noreferrer" >Etherscan ↝</a></p>
+            <p><a href="https://rinkeby.etherscan.io/" target={"_blank"} rel="noopener noreferrer" >Etherscan ↝</a></p>
           </div>
           <br />
           <div id={styles.card_description} style={{ fontSize: "11.5px" }}>

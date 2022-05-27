@@ -116,7 +116,7 @@ export const TransactionProvider = ({ children }) => {
       document.getElementById("link_to_verify").innerHTML = "<a href='/verify' target='_blank'>Verify transaction</a>";
 
       console.log(_txHash);
-      console.log("https://ropsten.etherscan.io/tx/" + _txHash);
+      console.log("https://rinkeby.etherscan.io/tx/" + _txHash);
 
       // ######
       // ######
