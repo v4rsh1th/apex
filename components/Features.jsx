@@ -82,7 +82,7 @@ const Features = () => {
           </p>
           <br />
           <br />
-          &copy; 2022 ApexChain
+          &copy; 2023 ApexChain
           <br />
           <br />
           <p id={styles.status}>
